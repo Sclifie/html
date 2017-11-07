@@ -22,6 +22,14 @@ git clone https git:// or user@server:path/to/repo.git
 жизнь состояния https://git-scm.com/book/en/v2/images/lifecycle.png
 git status - состояния файлов или git status -s
 gid add
+git commit - открытие тестового редактора и коммент ит в нём
+git commit -m "коментируем"
+git commit -a -закомментировали, теперь меняем и скаждым коммитом не пользуемся ADD - использовать если ты главный надо файлом проекта
+$ git commit --amend -операция отмены
+git diff - не проиндексированные изменения
+git diff <file-name> 
+git diff --staged индексированные изменения после коммита
+!!!!!!! git difftool --tool-help - используем тулзу
 
 Игнорирование файлов
 файл .gitignore
