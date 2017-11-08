@@ -72,5 +72,11 @@ git remote add pb <url-репозитори€>
 git clone url далее>>
 git fetch название(origin или что-то ещЄ) получение изменений со стороны удалЄнного репозитори€
 
+¬етки и работа с ними
+git branch NAME
+git checkout BRANCH_NAME - чек изменений в ветке
+
+
+
 
 
