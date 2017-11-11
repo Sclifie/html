@@ -1,0 +1,49 @@
+/* CSS СЕЛЕКТОРЫ */
+/*
+    Классы - начинаются "."
+    Селекторы Тегов - просто имя тегов
+    Идетификаторы - через решётку
+    Контекстные селекторы -
+ */
+
+.class-name{
+    color:purple;
+    font-size: 14pt;
+    font-weight: bold;
+    font-style: italic;
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background: rgba(0,0,0,0.5);
+    border: solid 2px black;
+    display: none;
+    text-align: center;
+    border: 0px 0px 0px 0px;
+    /*
+    display: inline; строчный элемент
+    display: block; блочный элемент
+    display: inline-block; блочно-строчный
+    display: none */
+    /* pt / % / em / vh*/
+}
+.a {
+    text-decoration: none;
+    cursor: none;
+}
+a:hover{
+
+}
+a:active{
+    color: blue;
+}
+
+#second-title{
+    color:green;
+}
+.spisok li{
+}
+/* Свойства селекторов */
+
+textarea {
+    resize: none;
+}
