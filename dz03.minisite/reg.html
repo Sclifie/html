@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <script rel="script">
+        function show_value2(x)
+    {
+        document.getElementById("mass-tablo").innerHTML=x;
+    }</script>
 </head>
 <body>
 <!--nachalo hedera + menu-->
@@ -95,7 +100,8 @@
                             <input type="radio" name="client_gender" value="0">Женщина
                             <input type="radio" name="client_gender" value="-1">"-1"<br>
                         <label for="client_mass">Масса одного пирога в граммах</label>
-                            <input type="range" name="client_mass" min="80" max="250"><br>
+                            <input type="range" id="mass" name="client_mass" min="80" max="250" step="10" onchange="show_value2(this.value)">
+                                <span style="color: red; font-weight: bold;" id="mass-tablo"></span> <br>
                         <label for="client_mass_answer"></label>
                             <input type="hidden" name="client-mass-var"><br>
                         <label for="client_bday">Дата рождения</label><br>
@@ -143,7 +149,7 @@
                         <label for="client_confirmsenddata">Передавать данные третьим лицам</label>
                         <input id="client_confirmsenddata" type="checkbox" required checked><br>
                         <input type="reset"><br><br>
-                        <input type="button" onclick="alert('Hello World!!')" value="ОТПРАВИТЬ">
+                        <input type="button" onclick="alert('Hello World!!')" value="ОТПРАВИТЬ JS">
                         <input type="submit" value="ОТПРАВИТЬ">
                         <input type="hidden" id="#">
                     </fieldset>
