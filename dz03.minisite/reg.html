@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--nachalo hedera + menu-->
+<div class="main-wraper">
+    <div class="header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/header.png" align="left">
+            </a>
+        </div>
+        <div class="header-phone">
+            <a href="tel:+7 111 1111">
+                <img src="img/callback.png">
+            </a>
+        </div>
+    </div>
+    <div class="header-menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="shop/shop.html">
+                    Каталог
+                </a>
+            </li>
+            <li>
+                <a href="news/news.html">
+                    Новости
+                </a>
+            <li>
+                <a href="contacts.html">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Конец хедера + меню  Начало страницы-->
+    <div class="main-content">
+        <div class="col-left">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li><br>
+                <li>
+                    <a href="shop/shop.html">
+                        Каталог
+                    </a>
+                </li><br>
+
+                <li>
+                    <a href="news/news.html">
+                        Новости
+                    </a>
+                </li><br>
+
+                <li>
+                    <a href="contacts.html">
+                        Контакты
+                    </a>
+                </li><br>
+
+                <li>
+                    <a href="reg.html">
+                        Регистрация
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-center">
+            <div class="content-center">
+                <h2>Сложная форма по ДЗ</h2>
+                <form action="#" method="post" id="client_form">
+                    <fieldset>
+                        <legend>Сложная форма по ДЗ</legend>
+                        <label for="client_name">Фамилия</label><br>
+                            <input id="client_name" type="text" required autofocus placeholder="Иванов"><br>
+                        <label for="client_name2">Имя</label><br>
+                            <input id="client_name2" type="text" required placeholder="Иван"><br>
+                        <label for="client_name3">Отчество</label><br>
+                            <input id="client_name3" type="text" required placeholder="Иваныч"><br>
+                        <label for="client_gender">Ваш пол</label>
+                            <input type="radio" name="client_gender" value="1">Мужчина
+                            <input type="radio" name="client_gender" value="0">Женщина
+                            <input type="radio" name="client_gender" value="-1">"-1"<br>
+                        <label for="client_mass">Масса одного пирога в граммах</label>
+                            <input type="range" name="client_mass" min="80" max="250"><br>
+                        <label for="client_mass_answer"></label>
+                            <input type="hidden" name="client-mass-var"><br>
+                        <label for="client_bday">Дата рождения</label><br>
+                            <input id="client_bday" type="date" required><br>
+                        <label for="quantity">Количество пирогов</label><br>
+                            <input name="quantity" type="number" min="1" max="8"><br>
+                        Выберите страну:<br>
+                        <select form="client_form">
+                            <option disabled>Выберите страну...</option>
+                            <option>-------</option>
+                            <option>Россия</option>
+                            <option>Грузия</option>
+                            <option>Армения</option>
+                            <option>Собственная Независимая Республика Федерального уровня с авторитарной теократией</option>
+                        </select><br>
+
+                        <select form="client_form" size="15">
+                            <option disabled>Выберите начинку пирожков</option>
+                            <optgroup label="Мясная">
+                                <option>Баранина</option>
+                                <option>Говядина</option>
+                                <option>СвЯнятина</option>
+                            </optgroup>
+                            <optgroup label="Сладкая">
+                                <option>Клюква</option>
+                                <option>Малина</option>
+                                <option>Клубника</option>
+                            </optgroup>
+                        </select><br>
+                        <label for="client-adress">Адрес доставки</label><br>
+                            <textarea name="client-adress" class="input_adress" required placeholder="192000, Санкт-Петербург ул. Копытина дом 1 корп 1 кв 101" rows="3" cols="50">
+
+                            </textarea><br>
+                        <label>Время доставки</label><br>
+                        <input type="time"><br>
+                        <label>Класс доставки</label>
+                            <input type="radio">
+                        <br>
+                        <label>Телефон для связи</label><br>
+                        <input type="tel" required placeholder="+7 999 999-9999"><br>
+                        <label>Фотография паспорта Главная и Регистрация</label>
+                        <input type="file" multiple accept="image/*"><br>
+                        <label></label>
+                        <input><br>
+                        <label for="client_confirmsenddata">Передавать данные третьим лицам</label>
+                        <input id="client_confirmsenddata" type="checkbox" required checked><br>
+                        <input type="reset"><br><br>
+                        <input type="button" onclick="alert('Hello World!!')" value="ОТПРАВИТЬ">
+                        <input type="submit" value="ОТПРАВИТЬ">
+                        <input type="hidden" id="#">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-right">
+
+            <form action="#" method="post" id="">
+                <fieldset>
+                    <legend>Авторизация</legend>
+                    <label for="auth_loginname">Логин</label><br>
+                    <input id="auth_loginname" type="text" required><br>
+                    <label for="auth_password">Пароль</label><br>
+                    <input id="auth_password" type="password" required><br>
+                    <label>Запомнить меня</label>
+                    <input id="auth_remember" type="checkbox">
+                    <input type="hidden" id="#">
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+    <div class="footer">ФУТЕР</div>
+
+</div>
+<!--Конец хедера + меню    -->
+</body>
+</html>

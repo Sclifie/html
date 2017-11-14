@@ -1,0 +1,211 @@
+/* CSS steles of my micro site
+1. GENERAL TAGS
+2. HEADER DIVS AND TAGS
+3. MAIN CONTENT DIVS AND TAGS
+ */
+
+/* 1.0 GENERAL TAGS */
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    color: #444;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #17beaf;
+}
+
+a{
+    color:#17beaf;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+a:visited {
+    color: #17beaf;
+}
+li,ul{
+    display: inline;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 3px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201D""\201C";
+}
+blockquote:before{
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.3em;
+}
+blockquote p{
+    display: inline;
+}
+
+/* 2. HEADER DIVS AND TAGS */
+
+.main-wraper{
+    position: relative;
+    width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.header{
+    display: block;
+    height: 153px;
+}
+.header-logo{
+    display: block;
+    float: left;
+}
+.header-logo a{
+    cursor: default;
+}
+.header-phone{
+    position: relative;
+    display: inline-block;
+    height: 153px;
+    float: left;
+    top: 50%;
+    margin-top: -25px;
+}
+.header-menu{
+    background: #0e98c5;
+    position: inherit;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.header-menu h2{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+.header-menu ul{
+    padding: 0 0px 0 0px;
+    margin: 0 0px 0 0px;
+    float: left;
+}
+.header-menu li{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 15px 15px 15px;
+    display: block;
+    float: left;
+    width: 195px;
+    text-align: center;
+    list-style: square;
+}
+
+
+/*           3. MAIN CONTENT DIVS AND TAGS             */
+
+.main-content {
+    overflow: hidden;
+    background: #fff;
+    display: block;
+}
+.main-content div {
+    display: inline;
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.main-content p{
+    display: block;
+    padding: 5px 5px 5px 5px;
+}
+.col-left{
+    width: 225px;
+    float: left;
+    display: inline-block;
+}
+.col-left li{
+    display: block;
+    align-content: center;
+    list-style: none;
+    padding: 2px 0 2px 30px;
+    margin: 5px 5px 5px 5px;
+}
+.footer {
+    display: block;
+    background: #0e98c5;
+    height: 150px;
+}
+.col-center{
+    display: inline-block;
+    width: 450px;
+    margin: 0 225px 0 225px;
+    float: left;
+}
+.col-right{
+    display: inline-block;
+    float: left;
+    margin-left: 675px;
+    background: #ECD5DE;
+    width: 225px;
+}
+.content-center{
+    width: 430px;
+    font-size: 14px;
+    display: block;
+    padding: 5px 10px 25px 10px;
+}
+/* 4. FORMS */
+input[type=text]{
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    border: 1px solid red;
+    border-radius: 3px;
+    width: 100px;
+    height: auto;
+    background-color: black;
+    color: #fff;
+}
+input[type=text]:focus{
+    font-style: 14px;
+    border: 3px solid #555;
+    width: 240px;
+}
+select{
+    display: block;
+    width: 180px;
+    background-color: #0e98c5;
+}
+fieldset {
+    background-color: #f9f9f9;
+}
+label{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+.input_adress{
+    height: 54px;
+    width: 150px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    resize: none;
+}
+.input_adress:focus{
+    border: 2px solid #0e98c5;
+    width: 240px;
+    height: 54px;
+}
+
+
+
+
+
