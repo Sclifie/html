@@ -1,0 +1,107 @@
+@import "grid.css";
+/*
+@font-face { font-family: /*NAME*/
+/*    src: url(fonts/);
+}
+.menu {
+    background: #000000;
+}
+.menu li{
+    display:inline-block;
+    color:fff;
+}
+.menu a{
+    text-decoration: none;
+    color:#333;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: red;
+}
+*/
+
+.box1{
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background: #000000;
+    padding: 50px; /*сверху справа снизу слева */
+}
+.box2{
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background: #0e98c5;
+    padding: 50px;
+}
+.box3,.box4{
+    /*  visibility: collapse;  Если блочный то hidden если строчный display:none */
+    /*  visibility: hidden;*/
+
+}
+.overflow-hidden,
+.overflow-scroll,
+.overflow-visible{
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+    margin: 10px;
+}
+.overflow-visible{
+    overflow: visible;
+}
+.overflow-scroll{
+    overflow: scroll;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+/*Если марджин у близстоящих элементов "положительный" то выбирается самый большой, если оба числа отрицательных - они
+складываются
+*/
+/* Float - плавание элемента по горизонту, блочный элемент идущий за float, приобретает значение float предыдущего, для
+ отмены данного правила используем свойство clear: both; */
+
+/*Позиционирование элементов */
+
+.static,
+.fixed,
+.relative,
+.absolute{
+    width: 200px;
+    height: 200px;
+    border: 3px dashed red;
+    margin: 20px;
+}
+/* фиксированное отображение относительно браузера */
+.fixed{
+    position: fixed;
+    top:150px;
+    left: 50%;
+}
+/* сдвигается относительно места в котором должен был стоять */
+.relative{
+    position: relative;
+    top:20px;
+    left:100px;
+}
+/* Абсолютное позиционирование */
+.absolute{
+    position: absolute;
+    top:100px;
+    left: 30px;
+}
+/* Сетка вёрстка */
+/* файл грид */
+.hello{
+    resize:
+    background: red;
+}
+

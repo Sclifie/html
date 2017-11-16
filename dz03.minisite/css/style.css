@@ -71,6 +71,7 @@ blockquote p{
     float: left;
 }
 .header-logo a{
+    display: block;
     cursor: default;
 }
 .header-phone{
@@ -94,19 +95,22 @@ blockquote p{
     color: #000000;
 }
 .header-menu ul{
-    padding: 0 0px 0 0px;
-    margin: 0 0px 0 0px;
+    /*padding: 0 0px 0 0px;*/
+    /*margin: 0 0px 0 0px;*/
     float: left;
 }
 .header-menu li{
+    margin: 20px 0 20px 0;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
-    padding: 15px 15px 15px 15px;
     display: block;
     float: left;
-    width: 195px;
+    width: 225px;
     text-align: center;
     list-style: square;
+}
+.header-menu a{
+    padding: 25px 15px 25px 15px;
 }
 
 

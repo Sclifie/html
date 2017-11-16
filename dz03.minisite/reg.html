@@ -94,6 +94,7 @@
                         <label for="client_name2">Имя</label><br>
                             <input id="client_name2" type="text" required placeholder="Иван"><br>
                         <label for="client_name3">Отчество</label><br>
+<<<<<<< HEAD
                             <input id="client_name3" type="text" required placeholder="Иваныч"><br><br>
                         <label for="client_gender">Ваш пол</label><br>
                             <input type="radio" name="client_gender" value="1">Мужчина<br>
@@ -102,6 +103,16 @@
                         <label for="client_mass">Масса одного пирога в граммах</label><br>
                             <input type="range" id="mass" name="client_mass" value="80" min="80" max="250" step="10" onchange="show_value2(this.value)">
                                 <span style="color: red; font-weight: bold;" id="mass-tablo"></span>грамм<br>
+=======
+                            <input id="client_name3" type="text" required placeholder="Иваныч"><br>
+                        <label for="client_gender">Ваш пол</label>
+                            <input type="radio" name="client_gender" value="1">Мужчина
+                            <input type="radio" name="client_gender" value="0">Женщина
+                            <input type="radio" name="client_gender" value="-1">Деревянный<br>
+                        <label for="client_mass">Масса одного пирога в граммах</label>
+                            <input type="range" id="mass" name="client_mass" min="80" max="250" step="10" onchange="show_value2(this.value)">
+                                <span style="color: red; font-weight: bold;" id="mass-tablo"></span> <br>
+>>>>>>> d5de36c695d76c4b19a77f846b8de9e88a66a2c6
                         <label for="client_mass_answer"></label>
                             <input type="hidden" name="client-mass-var"><br>
                         <label for="client_bday">Дата рождения</label><br>
