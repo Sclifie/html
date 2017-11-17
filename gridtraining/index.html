@@ -3,148 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="include/css/styles.css">
-    <title>Gri(n)ding</title>
+    <title>Главная</title>
 </head>
 <body>
-     <!-- menu fixed -->
-     <div class="row">
-        <div class="col-12 top-menu nav fixed">
-            <div class="col-3 offset-1 logo">LOGO</div>
-            <ul class="nav col-4 offset-4">
-                <li class="item"><a href="#">Главная</a></li>
-                <li class="item"><a href="#">Новости</a></li>
-                <li class="item"><a href="#">Каталог</a></li>
-                <li class="item"><a href="#">Контакты</a></li>
-            </ul>
+<!--меню верх-->
+
+    <div class="col-12">
+        <div class="menu_fixed">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="col-12">
+                        <div class="col-6 offset-6">
+                            <ul class="top_menu right">
+                                <li class=""><a href="#">О нас</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wrapper center">
+                            <div class="col-2">
+                                <div class="left">
+                                    <img src="include/img/logo-1.png">
+                                </div>
+                            </div>
+                            <div class="left col-6">
+                                <input class="search" type="search" placeholder="Введите если хотите что-то найти...">
+                            </div>
+                            <div class="auth left col-4">
+                                <form class="auth">
+                                    <input type="text" placeholder="Логин">
+                                    <input type="password" placeholder="Ваш пароль">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row padding_min">
+                        <div class="col-12 bg">
+                            <div class="wrapper center">
+                                <ul class="menu">
+                                    <li class=""><a href="#">Главная</a></li>
+                                    <li class=""><a href="#">Каталог</a></li>
+                                    <li class=""><a href="#">Новости</a></li>
+                                    <li class=""><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
-         <div class="row"></div>
-         <div class="row col-10 absolute">
-             <div class="col-8 offset-2">
-                 <div class="col-2 offset-1 left">
-                     <ul>
-                         <li>
-                             <a href="index.html">
-                                 Главная
-                             </a>
-                         </li>
-                         <li>
-                             <a href="shop/shop.html">
-                                 Каталог
-                             </a>
-                         </li>
+            <!--карусель-->
+        <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="slider">
+                            <li class="active">
+                                <img src="include/img/slider-bg.png" class="active">
+                            </li>
+                            <li class="not_active">
+                                <img src="include/img/slider-2.png" class="">
+                            </li>
+                            <li class="not_active">
+                                <img src="include/img/slider-3.png" class="">
+                            </li>
+                            <li class="not_active">
+                                <img src="include/img/slider-4.png" class="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+            <!--Выдача категорий-->
+                <div class="row">
+                    <div class="container">
+                            <div class="col-9">
+                                <div class="cat_1">
+                                    <div class="col-12">
 
-                         <li>
-                             <a href="news/news.html">
-                                 НовостиИ
-                             </a>
-                         </li>
+                                            <div class="col-4">
+                                                <div class="item_type_1">
+                                                    <p class="item_h2">Item 1</p>
+                                                    <div class="item_img_1">
 
-                         <li>
-                             <a href="contacts.html">
-                                 Контакты
-                             </a>
-                         </li>
-
-                         <li>
-                             <a href="../dz03.minisite/reg.html">
-                                 ДЗ 003
-                             </a>
-                         </li>
-                         <li>
-                             <a href="grid.html">
-                                 Сеточка
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="col-5 offset-1 wrapper">
-                     <h1>Привет!!!</h1>
-                     <p>
-                         <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lor
-                         em Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scr
-                         ambled it to makea type specimen book. <br>
-
-                         <blockquote cite="vk.com/sclif">
-                     <p>is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown</p>
-                     </blockquote>
-                     <b>It has survived not only five centuries</b>, but also the leap into el
-                     ectronic typesetting,
-                     remaining essentially unchanged. It was popularised in the<br>
-                     1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-                     and more recently with desktop <i>publishing</i> <sub>software</sub> like Aldus <sup>PageMaker</sup>
-                     including versions of Lorem Ipsum.<br>
-                     </p>
-                     <blockquote cite="vk.com/sclif"><p>is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown
-                     </blockquote>
-                     <p>
-                         <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lor
-                         em Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scr
-                         ambled it to makea type specimen book. <br>
-
-                         <blockquote cite="vk.com/sclif">
-                     <p>is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown</p>
-                     </blockquote>
-                     <b>It has survived not only five centuries</b>, but also the leap into el
-                     ectronic typesetting,
-                     remaining essentially unchanged. It was popularised in the<br>
-                     1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-                     and more recently with desktop <i>publishing</i> <sub>software</sub> like Aldus <sup>PageMaker</sup>
-                     including versions of Lorem Ipsum.<br>
-                     </p>
-                     <blockquote cite="vk.com/sclif"><p>is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown
-                     </blockquote>
-                     <p>
-                         <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lor
-                         em Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scr
-                         ambled it to makea type specimen book. <br>
-
-                         <blockquote cite="vk.com/sclif">
-                     <p>is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown</p>
-                     </blockquote>
-                     <b>It has survived not only five centuries</b>, but also the leap into el
-                     ectronic typesetting,
-                     remaining essentially unchanged. It was popularised in the<br>
-                     1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-                     and more recently with desktop <i>publishing</i> <sub>software</sub> like Aldus <sup>PageMaker</sup>
-                     including versions of Lorem Ipsum.<br>
-                     </p>
-                     <blockquote cite="vk.com/sclif"><p>is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's
-                         standard dummy text ever since the 1500s, when an unknown
-                     </blockquote>
+                                                    </div>
+                                                        <div class="button">
+                                                            <a href="#" class="">Купить</a>
+                                                        </div>
+                                                </div>
+                                            </div>
 
 
-                 </div>
-                 <div class="col-2 offset-1">
-                     <form action="#" method="post" id="">
-                         <fieldset>
-                             <legend>Авторизация</legend>
-                             <label for="auth_loginname">Логин</label><br>
-                             <input id="auth_loginname" type="text" required><br>
-                             <label for="auth_password">Пароль</label><br>
-                             <input id="auth_password" type="password" required><br>
-                             <label>Запомнить меня</label>
-                             <input id="auth_remember" type="checkbox">
-                             <input type="hidden" id="#">
-                         </fieldset>
-                     </form>
-                 </div>
-             </div>
-         </div>
-     </div>
+                                            <div class="col-4">
+                                                <div class="item_type_1">
+                                                    <p class="item_h2">Item 2</p>
+                                                    <div class="item_img_2">
+                                                        <div class="button">
+                                                            <a href="#" class="">Купить</a>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="col-4">
+                                                <div class="item_type_1">
+                                                    <p class="item_h2">Item 2</p>
+                                                        <div class="item_img_2">
+
+                                                        </div>
+                                                            <div class="button">
+                                                                <a href="#" class="">Купить</a>
+                                                            </div>
+                                                </div>
+                                            </div>
+
+                                    <div class="row">
+                                            <div class="col-12">
+                                                <div class="col-1">
+                                                        <p class="item_h2">Item 3</p>
+                                                            <div class="item_img_1">
+
+                                                            </div>
+                                                        <a href="#" class="button">Купить</a>
+                                                </div>
+
+                                                <div class="col-1 offset-20">
+                                                    <p class="item_h2">Item 3</p>
+                                                    <div class="item_img_1">
+
+                                                    </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                                <div class="col-1 offset-20">
+                                                    <p class="item_h2">Item 3</p>
+                                                    <div class="item_img_1">
+
+                                                    </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                                <div class="col-1 offset-20">
+                                                    <p class="item_h2">Item 3</p>
+                                                    <div class="item_img_1">
+
+                                                    </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                                <div class="col-1 offset-20">
+                                                    <p class="item_h2">Item 3</p>
+                                                    <div class="item_img_1">
+
+                                                    </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                                <div class="col-1 offset-20">
+                                                    <p class="item_h2">Item 3</p>
+                                                    <div class="item_img_1">
+
+                                                    </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                                <div class="col-10">
+                                                    <p class="item_h2">Item 4</p>
+                                                        <div class="item_img_2">
+
+                                                        </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                                <div class="col-1 offset-1">
+                                                    <p class="item_h2">Item 4</p>
+                                                    <div class="item_img_2">
+
+                                                    </div>
+                                                    <a href="#" class="button">Купить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cat_2">
+                                    <div class="col-12">
+                                        <div class="col-8">
+                                            <p class="item_h2">Item 1</p>
+                                            <div class="item_img_4">
+
+                                            </div>
+                                            <a href="#" class="button">Купить</a>
+                                        </div>
+
+                                        <div class="col-3 offset-1">
+                                            <p class="item_h2">Item 2</p>
+                                            <div class="item_img_4">
+
+                                            </div>
+                                            <a href="#" class="button">Купить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+    </div>
+
+
 
 </body>
 

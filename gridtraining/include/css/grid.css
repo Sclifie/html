@@ -1,9 +1,24 @@
 /* clearfix */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+}
+
+/*.row {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+/*}*/
+
 .row:after {
     clear: both;
-    content: ".";
-    display: block;
-    height: 0;
+    content: "";
+    display: table;
     visibility: hidden;
 }
 
