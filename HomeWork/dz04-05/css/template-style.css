@@ -1,0 +1,473 @@
+/* Свои свйства */
+
+/* фиксированное отображение относительно браузера */
+.fixed{
+    position: fixed;
+    overflow-y: visible;
+}
+/* сдвигается относительно места в котором должен был стоять */
+.relative{
+    position: relative;
+}
+/* Абсолютное позиционирование */
+.absolute{
+    z-index: 50;
+    position: absolute;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.margin-min{
+    margin-bottom: 35px;
+}
+.padding-min{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+/* Тексты и цитаты*/
+.large{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.medium{
+    font-weight: bold;
+    font-size: 1em;
+}
+.small-text{
+    font-weight: 700;
+    font-size: 0.8em;
+}
+/*Меню*/
+.nav li {
+    display: inline-block;
+    float: left;
+    padding: 0 0 0 0;
+    margin: 7px 15px 0 0;
+}
+
+.nav li:nth-child(N):after{
+    padding-left: 15px;
+    content: "|";
+    color: RGBA(0,0,0, 0.3);
+    font-weight: bold;
+}
+.nav li:last-child:after{
+    content: "";
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nav a{
+     padding: 5px 10px 10px 10px
+}
+
+.nav li:focus{
+    border-bottom: solid red 2px;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 3px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201D""\201C";
+}
+
+blockquote:before{
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.3em;
+}
+
+blockquote p{
+    display: inline;
+}
+
+.wrapper{
+    display: block;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+.bg{
+    height: 50px;
+    background-color: #3BA4C7;
+}
+.bd{
+    border: 2px red solid;
+    max-width: calc(100% - 2px);
+}
+
+.center{
+    align-content: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* Менюшки и лого */
+
+.nav{
+    float: left;
+    max-width: 1100px;
+    margin: auto;
+    top: 15px;
+    left: 0;
+    bottom: calc(100% + 50px);
+    right: 0;
+    z-index: 5000;
+}
+
+/* Карусель */
+
+.slider{
+    display: block;
+    height: 370px;
+    margin-bottom: 20px;
+}
+.active{
+    height: 370px;
+    cursor: pointer;
+    width: 100%;
+}
+.not-active{
+    display: none;
+}
+.flex-slider{
+    display: flex;
+    flex: 1 100%;
+    height: 370px;
+    background-image: url("../img/slider-1.png");
+    cursor: pointer;
+}
+.flex-slider li{
+    list-style-type: none;
+}
+.flex-slider-item1-active{
+    height: 370px;
+    margin: auto;
+    display: flex;
+
+    flex: 1 100%;
+}
+.flex-slider-item1-active img{
+    display: flex;
+    flex: 1 100%;
+}
+.flex-slider-item2-active{
+    display: none;
+}
+.flex-slider-item3-active{
+    display: none;
+}
+/*Контент зона*/
+.content{
+
+    padding: 0;
+}
+
+.content p{
+    padding: 0 0 0 25px;
+    margin: 0;
+}
+.big{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.big a{
+    display: block;
+    cursor: pointer;
+}
+
+.small{
+    text-align: center;
+    display:inline-block;
+    float: left;
+    clear: both;
+}
+.small p{
+    text-align: right;
+}
+.col3{
+    float: left;
+    width: calc(25% - 5px);
+}
+
+.news-img {
+    float: left;
+    width: 85px;
+    height: 85px;
+}
+.news{
+    height: 10em;
+    width: 95%;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0 auto;
+}
+
+.news-text {
+}
+
+.news-title {
+    display: block;
+    border-bottom: 1px lightskyblue dashed;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.col8 {
+    width: calc(66.667% - 6px);
+    float: left;
+    padding: 0;
+    border-right: solid lightblue 1px;
+    margin-right: 5px;
+}
+
+.col8-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-align: center;
+}
+.mid{
+    display: block;
+    text-align: center;
+}
+
+.content-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.form-container {
+    vertical-align: top;
+    float: right;
+    border: 0px solid #f2e3d2;
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    text-decoration: none;
+    width:200px;
+}
+.form-field {
+    border: 1px solid #c9b7a2;
+    margin: 15px 10px 10px 0;
+    background: #e4d5c3;
+    border-radius: 4px;
+    color: #c9b7a2;
+    width:60px;
+}
+.form-field:focus {
+    background: #fff;
+    color: #725129;
+}
+
+.submit-button {
+    margin: 15px 0 10px 0;
+    float: right;
+    border: 1px solid #447314;
+    text-shadow: #addc7e 0 1px 0;
+    color: #31540c;
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    padding: 2px 3px 2px 3px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.submit-button:hover {
+    border: 0px solid #447314;
+    text-shadow: #31540c 0 1px 0;
+    background: cornflowerblue;
+    color: #fff;
+}
+.submit-button:active {
+    text-shadow: #31540c 0 1px 0;
+    border: 0px solid #447314;
+    background: #8dc059;
+    color: #fff;
+}
+
+
+.footer-item {
+    text-align: center;
+}
+
+.about-image {
+    text-align: center;
+
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: calc(100% - 90px);
+}
+/* Вычитал на w3school */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: blue;
+    top:0;
+    bottom: 0;
+    left: 50%;
+}
+
+/* Container around content */
+.container {
+    padding: 0 10px 0 10px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 35px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left1 {
+    left: -2px;
+}
+
+/* Place the container to the right */
+.right1 {
+    left: calc(50% + 2px);
+}
+
+/* Add arrows to the left container (pointing right) */
+.left1::before {
+    content: "";
+}
+
+/* Add arrows to the right container (pointing left) */
+.right1::before {
+    content: "";
+}
+
+.right1::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content1 {
+    padding: 20px 10px 20px 10px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 6px;
+    right: 40px;
+}
+.content2{
+    padding: 20px 10px 20px 10px;
+    background-color: lavender;
+    position: relative;
+    border-radius: 6px;
+    left: 40px;
+}
+
+.hr {
+    float: right;
+}
+
+.hl {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.margin {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/*Flex-Contacts*/
+
+.main-wraper {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.menu{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.links{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    margin-top: 20px;
+
+    display:inline-block;
+    float: left;
+}
+
+.item-2{
+    display: inline-block;
+    float: left;
+}
+
+.item-3{
+    display: inline-block;
+    float: left;
+}
+.item-4 {
+    display: inline-block;
+    float: left;
+}
+.form-container1 {
+
+    border: 0px solid #f2e3d2;
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    text-decoration: none;
+    margin: 0 0 15px 0;
+
+}
+.form-field1 {
+    border: 1px solid #c9b7a2;
+    margin: 0 20px 0 0;
+    background: #e4d5c3;
+    border-radius: 4px;
+    color: #c9b7a2;
+    width:60px;
+}

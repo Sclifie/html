@@ -1,0 +1,86 @@
+.container-flex{
+    display: flex;
+}
+p{
+    background: green;
+    margin: 0;
+}
+.container-flex1{
+    display: flex;
+    justify-content: flex-start;
+    /*justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    */
+}
+.container-flex2{
+    display: flex;
+    background: red;
+    align-content: stretch;
+    /*!*align-items: baseline;*!
+    !*align-items: flex-start; прилипание сверху*!
+    !*align-items: flex-end;  прилипание снизу*!
+    !*align-items: center;*!
+    ;*/
+}
+.container-flex3{
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;*/
+}
+.container-flex4{
+    display: flex;
+    width: 200px;
+    background: gray;
+    flex-wrap: wrap;
+    /*flex-wrap: nowrap;*/
+    /*flex-wrap: wrap-reverse;*/
+}
+.container-flex5{
+    display: flex;
+    background: lightcoral;
+    width: 280px;
+
+    /*обязательно*/
+    height: 200px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*выравнивание контента
+    align-content: flex-end; Вниз контейнера
+
+    align-content: flex-start;
+    выравнивание по центру Флекса
+    align-content: center;
+    выравнивание с равными промежутками с центрированием элемента
+    align-content: space-around;*/
+    /*выравнивание с равными промежутками начиная с 0
+    align-content: space-between;
+    выравнивание по содержимомму
+    align-content: stretch;*/
+}
+.container-flex6{
+    display: flex;
+    background: lightgray;
+    height: 200px;
+}
+.order{
+    order: 1; /* -1 | 0 | 1 */
+}
+.flex-basic{
+    flex-basis: 30px;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.flex-shrink{
+    flex: 1 2 auto;
+}
+.align-self{
+    align-self: stretch;
+    /*align-content: flex-end;*/
+    /*align-content: flex-start;*/
+    /*align-self: center;*/
+}

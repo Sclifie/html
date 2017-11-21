@@ -1,0 +1,4 @@
+@import url(grid.css); /* JUST MAKE A GRID ;) */
+@import url(resetcss.css); /* Reset all brouser setting */
+@import url(template-style.css); /* OUR CSS FILE */
+@import url(normalizer.css); /* Normalize some tags and adds new styles */
