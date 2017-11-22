@@ -20,33 +20,63 @@
                 </div>
             </div>
     <!--</div>-->
-
-        <div class="map">
-            <img src="../img/map.png">
-        </div>
+    <!--гугл сказал: "Попробуйте это сделать сами"-->
+    <div id="map"></div>
     <div class="main-wraper">
         <div class="flex-content">
-            <div class="content-1">
-
-            </div>
-            <div class="content-2">
-
-            </div>
-            <div class="content-3">
-
-            </div>
+                <div class="content-1">
+                    <div class="contact-title">
+                        Наши Контакты
+                    </div>
+                    <div class="contact-text">
+                        Ну очень большой текст в контктах
+                    </div>
+                </div>
+                <div class="content-4">
+                    <div class="contact-title">
+                        Наши Контакты
+                    </div>
+                    <div class="contact-text">
+                        Ну очень большой текст в контктах
+                        Ну очень большой текст в контктах
+                    </div>
+                    <div class="contact-title">
+                        Ну очень большой текст в контктах
+                    </div>
+                    <div class="contact-text">
+                        Ну очень большой текст в контктах
+                        Ну очень большой текст в контктах
+                    </div>
+                </div>
         </div>
-        <div class="flex-content-right">
-            <div class="content-1">
-
+        <div class="flex-content-footer">
+            <div class="content-1r">
+                <p>Контент футера не должен превышать 100px в высоту</p>
             </div>
-            <div class="content-2">
-
+            <div class="content-2r">
+                <p>2017, Санкт-Петербург, Колесников Глеб</p>
             </div>
-            <div class="content-3">
-
+            <div class="content-3r">
+                <p>Третья колонка пустая</p>
             </div>
         </div>
     </div>
+<!--гугл сказал: "Попробуйте это сделать сами"-->
+    <script>
+        function initMap() {
+            var uluru = {lat: 59.9343, lng: 30.3351};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSuGaLRsET9ffRwRNi6Be4Fof0aU2xhiU&callback=initMap">
+    </script>
 </body>
 </html>
