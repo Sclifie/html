@@ -1,0 +1,23 @@
+html,body{
+    background-color: RGBA(94,205,212, 0.6);
+}
+
+.main-wraper {
+    width: 960px;
+    margin: 0 auto;
+    background: white;
+    height: 100px;
+    border: red 1px solid;
+}
+.main-wraper-big{
+    width: 960px;
+    margin: 0 auto;
+    background: white;
+    height: 400px;
+    border: red 1px solid;
+}
+.main-wraper-no{
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
