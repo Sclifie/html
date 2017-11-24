@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
         <div class="row">
-            <div class="wrapper">
-            <div class="col-10 large">
-                <ul class="nav nav-ul">
+            <div class="wrapper wrapper-m wrapper-s">
+            <div class="col-10 left">
+                <ul class="nav nav-ul nav-m nav-ul-m nav-s nav-ul-s">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="pages/book.html">Обучение WEB</a></li>
                     <li><a href="pages/about.html">Коротко о мне</a></li>
                     <li><a href="pages/contacts.html">Контакты</a></li>
                 </ul>
             </div>
-            <div class=" col-2 right">
+            <div class="col-2 right">
                 <form class="form-container" name="auth">
                         <input class="form-field" type="text" name="name" placeholder="Логин" />
                         <input class="form-field" type="text" name="pw"  placeholder="Пароль"/>
                         <input class="submit-button" type="submit" value="Вход"/>
                 </form>
+                <a class="right login login-m login-s">
+                    Войти
+                </a>
             </div>
         </div>
         </div>
         <div class="row">
-
                 <div class="slider">
                     <ul class="flex-slider">
-                        <li class="flex-slider-item1-active">
-                            <!--<img src="img/slider-1.png" />-->
+                        <li class="flex-slider-item-active">
                         </li>
-                        <li class="flex-slider-notactive">
-                            <!--<img src="img/slider-1.png" />-->
+                        <li class="flex-slider-item-deactive">
                         </li>
-                        <li class="flex-slider-notactive">
-                            <!--<img src="img/slider-1.png" />-->
+                        <li class="flex-slider-item-deactive">
                         </li>
                     </ul>
                 </div>
@@ -45,31 +47,31 @@
 
 <!-- Контент -->
     <div class="row">
-        <div class="wrapper">
-            <div class="col8">
+        <div class="wrapper wrapper-m wrapper-s">
+            <div class="col8 col-12m">
                 <p class="col8-title">Hello World, this is my blog!</p>
-                <div class="col-6">
-                    <div class="big">
+                <div class="col-6 col-12-s">
+                    <p class="big">
                         <a href="index.html">
                             <img src="img/html-logo.png"/>
                         </a>
-                    </div>
+                    </p>
                 </div>
-                <div class="col-3">
-                    <div class="small">
-                        <img src="img/css3.png" height="150" width="150" />
-                    </div>
-                    <div class="small">
-                        <img src="img/js.png" height="150" width="150" />
-                    </div>
+                <div class="col-3 col-6-s">
+                    <p class="small">
+                        <img src="img/css3.png"/>
+                    </p>
+                    <p class="small">
+                        <img src="img/js.png"/>
+                    </p>
                 </div>
-                <div class="col3">
-                    <div class="small">
-                        <img src="img/php-logo.png" height="150" width="150" />
-                    </div>
-                    <div class="small">
-                        <img src="img/sql.png" height="150" width="150" />
-                    </div>
+                <div class="col3 col-6-s">
+                    <p class="small">
+                        <img src="img/php-logo.png"/>
+                    </p>
+                    <p class="small">
+                        <img src="img/sql.png"/>
+                    </p>
                 </div>
                     <div class="col-12">
                         <p class="content-title">
@@ -96,14 +98,15 @@
                             </div>
                         </div>
                     </div>
+
             </div>
 
 <!-- Блог справа -->
-                <div class="col-4">
+                <div class="col-4 col-12m col-12s">
                     <div class="row">
                             <div class="row">
                                 <div class="col-3">
-                                    <div class="news-img">Img</div>
+                                    <div class="news-img news-img-m">Img</div>
                                 </div>
                                 <div class="col-8">
                                     <div class="news">
@@ -118,7 +121,7 @@
                             </div>
                         <div class="row">
                             <div class="col-3">
-                                <div class="news-img">
+                                <div class="news-img news-img-m">
                                 </div>
                             </div>
                             <div class="col-8">
@@ -134,7 +137,7 @@
                         </div>
                         <div class="row">
                             <div class="col-3">
-                                <div class="news-img">Img</div>
+                                <div class="news-img news-img-m">Img</div>
                             </div>
                             <div class="col-8">
                                 <div class="news">
